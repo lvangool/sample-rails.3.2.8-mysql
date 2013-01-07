@@ -11,9 +11,8 @@ default: &default
             unique_name: frontend
             type: bring_your_own_cloud
                 vendor: aws
-                size: small
                 region: eu
-                distro: ubuntu        
+                size: small                
         configuration: 
             #version: 3.2.9 --> always detected
             ruby_version: 1.9.3
@@ -54,7 +53,6 @@ production:
             name: redis_server
             size: medium
             region: eu
-            distro: ubuntu
         redis:
             version: 2.6.5
 
