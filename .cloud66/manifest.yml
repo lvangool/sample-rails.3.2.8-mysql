@@ -24,5 +24,11 @@ staging:
 
 production:
     <<: *default
-
+    mysql:
+        server: 
+            unique_name: backend
+            type: bring_your_own_cloud
+            vendor: aws
+            size: c1.medium
+            region: us-east-1
 
