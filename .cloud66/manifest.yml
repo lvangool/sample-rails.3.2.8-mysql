@@ -5,8 +5,8 @@ default: &default
             unique_name: frontend
             type: bring_your_own_cloud
             vendor: aws
-            size: c1.medium
             region: us-east-1
+            size: c1.medium
             extra_packages: 
                 - sysstat
         configuration: 
@@ -14,7 +14,7 @@ default: &default
             use_asset_pipeline: true 
 
     mysql:
-        shared_server: frontend        
+        shared_server: frontend
 
 development:
     <<: *default
@@ -28,7 +28,6 @@ production:
         server: 
             unique_name: backend
             type: bring_your_own_cloud
-            vendor: aws
             size: c1.medium
             region: us-east-1
 

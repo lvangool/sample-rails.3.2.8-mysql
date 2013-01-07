@@ -10,9 +10,9 @@ default: &default
         server: 
             unique_name: frontend
             type: bring_your_own_cloud
-                vendor: aws
-                region: eu
-                size: small                
+            vendor: aws
+            region: eu
+            size: small                
         configuration: 
             #version: 3.2.9 --> always detected
             ruby_version: 1.9.3
@@ -37,14 +37,19 @@ default: &default
         configuration:
             version: 2.6.4        
 
-    mysql: external 
+    mysql: 
+        server:
+            type: external 
+        configuration:
+            perform_db_create: true | false #applies only to external
+
+
 
 
 
 #environment specific
 staging:
     <<: *default
-    environment: staging
 
 production:
     <<: *default
