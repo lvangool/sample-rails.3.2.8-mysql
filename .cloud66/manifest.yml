@@ -4,7 +4,7 @@ default: &default
         server: 
             unique_name: frontend
             type: bring_your_own_cloud
-            vendor: aws
+            vendor: joyent
             region: ap-southeast-1
             size: t1.micro
             extra_packages: 
