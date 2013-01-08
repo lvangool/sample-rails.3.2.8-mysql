@@ -6,7 +6,7 @@ default: &default
             type: bring_your_own_server
             address: 1.2.3.4
             username: freddy
-            ssh_key: my_key
+            ssh_key_name: vagrant
             extra_packages: 
                 - sysstat
         configuration: 
@@ -27,7 +27,6 @@ production:
     mysql:
         server: 
             unique_name: backend
-            type: bring_your_own_cloud
-            size: c1.medium
-            region: us-east-1
+            type: bring_your_own_server
+            address: 9.8.7.6
 
