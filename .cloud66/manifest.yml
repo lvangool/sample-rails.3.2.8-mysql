@@ -5,8 +5,8 @@ default: &default
             unique_name: frontend
             type: bring_your_own_cloud
             vendor: aws
-            region: us-east-1
-            size: c1.medium
+            region: ap-southeast-1
+            size: t1.micro
             extra_packages: 
                 - sysstat
         configuration: 
