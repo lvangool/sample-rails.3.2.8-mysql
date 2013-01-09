@@ -3,6 +3,52 @@ default: &default
     rails: 
         server: 
             unique_name: frontend
+            type: BYOC
+            vendor: joyent
+            region: us-east-1
+            size: t1.micro
+            extra_packages: 
+                - sysstat
+        configuration: 
+            ruby_version: 1.9.3
+            use_asset_pipeline: true 
+
+    mysql:
+        shared_server: frontend
+
+development:
+    <<: *default
+
+staging:
+    <<: *default
+
+production:
+    rails: 
+        server: 
+            unique_name: frontend
+            type: BYOS
+            address: 192.168.50.2
+            username: vagrant
+            ssh_key_name: blash
+            extra_packages: 
+                - sysstat
+        configuration: 
+            ruby_version: 1.9.3
+            use_asset_pipeline: true 
+
+    mysql:
+        shared_server: frontend
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+default: &default
+
+    rails: 
+        server: 
+            unique_name: frontend
             type: bring_your_own_cloud
             vendor: aws
             region: ap-southeast-1
