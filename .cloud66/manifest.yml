@@ -4,7 +4,7 @@ default: &default
         server: 
             unique_name: frontend
             type: BYOC
-            vendor: aws
+            vendor: joyent
             region: us-east-1
             size: t1.micro
             extra_packages: 
@@ -29,7 +29,7 @@ production:
             type: BYOS
             address: 192.168.50.2
             username: vagrant
-            ssh_key_name: vagrant
+            ssh_key_name: my key
             extra_packages: 
                 - sysstat
         configuration: 
