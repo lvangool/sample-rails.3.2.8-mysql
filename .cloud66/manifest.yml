@@ -3,7 +3,7 @@ default: &default
     rails: 
         server: 
             unique_name: frontend
-            type: bring_your_own_cloud
+            type: BYOC
             vendor: joyent
             region: ap-southeast-1
             size: t1.micro
@@ -27,6 +27,8 @@ production:
     mysql:
         server: 
             unique_name: backend
-            type: bring_your_own_cloud
+            type: BYOC
             size: c1.medium
             region: us-east-1
+            vendor: joyent
+            
