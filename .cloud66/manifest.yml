@@ -23,12 +23,20 @@ staging:
     <<: *default
 
 production:
-    <<: *default
-    mysql:
+    rails: 
         server: 
-            unique_name: backend
-            type: BYOC
-            size: c1.medium
-            region: us-east-1
-            vendor: joyent
+            unique_name: frontend
+            type: BYOS
+            address: 192.168.50.2
+            username: vagrant
+            ssh_key_name: vagrant
+            extra_packages: 
+                - sysstat
+        configuration: 
+            ruby_version: 1.9.3
+            use_asset_pipeline: true 
+
+    mysql:
+        shared_server: frontend
+
             
