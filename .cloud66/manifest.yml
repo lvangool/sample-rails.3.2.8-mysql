@@ -14,7 +14,8 @@ default: &default
             use_asset_pipeline: true 
 
     mysql:
-        shared_server: frontend
+        server: 
+            type: external
 
 development:
     <<: *default
