@@ -4,7 +4,7 @@ default: &default
         server: 
             unique_name: frontend
             type: BYOC
-            vendor: bsdfsd
+            vendor: joyent
             region: us-east-1
             size: t1.micro
             extra_packages: 
