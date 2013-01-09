@@ -5,8 +5,6 @@ default: &default
             unique_name: frontend
             type: BYOC
             vendor: joyent
-            region: us-east-1
-            size: t1.micro
             extra_packages: 
                 - sysstat
         configuration: 
