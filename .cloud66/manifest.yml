@@ -9,7 +9,7 @@ default: &default
             use_asset_pipeline: true 
 
     mysql:
-        server: external
+        shared_server:  frontend
 
 development:
     <<: *default
