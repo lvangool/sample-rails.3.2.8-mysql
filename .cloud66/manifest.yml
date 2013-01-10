@@ -20,7 +20,7 @@ staging:
             unique_name: frontend
             type: BYOC
             vendor: aws
-            region: us-east-1
+            region: us-west-1
             extra_packages: 
                 - sysstat
         configuration: 
