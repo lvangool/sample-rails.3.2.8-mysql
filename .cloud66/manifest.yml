@@ -1,5 +1,20 @@
 default: &default
+    rails: 
+        server: 
+            unique_name: frontend
+            vendor: joyent
+            region: us-sw-1
+            size: Small 1GB
+        configuration: 
+            use_asset_pipeline: true 
 
+    mysql:
+        server: external
+
+development:
+    <<: *default
+
+staging:
     rails: 
         server: 
             unique_name: frontend
@@ -14,14 +29,7 @@ default: &default
             use_asset_pipeline: true 
 
     mysql:
-        server: 
-            type: external
-
-development:
-    <<: *default
-
-staging:
-    <<: *default
+        server: external
 
 production:
     rails: 
