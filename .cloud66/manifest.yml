@@ -19,8 +19,9 @@ staging:
         server: 
             unique_name: frontend
             type: BYOC
-            vendor: aws
-            region: us-west-1
+            vendor: linode
+            region: "Atlanta, GA, USA"
+            size: "Linode 512"
             extra_packages: 
                 - sysstat
         configuration: 
