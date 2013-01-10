@@ -27,7 +27,13 @@ staging:
             ruby_version: 1.9.3
 
     mysql:
-        server: external
+        server: 
+            unique_name: backend
+            type: BYOC
+            vendor: aws
+            region: us-west-1
+            extra_packages: 
+                - sysstat
 
 production:
     rails: 
