@@ -37,7 +37,7 @@ production:
             type: BYOS
             address: 192.168.50.2
             username: vagrant
-            ssh_key_name: blash
+            #ssh_key_name: blash
             #ssh_key_name: vagrant
             extra_packages: 
                 - sysstat
