@@ -2,10 +2,11 @@ default: &default
     rails: 
         server: 
             unique_name: frontend
-            vendor: joyent
-            region: us-sw-1
-            size: Small 1GB
+            type: BYOC
+            vendor: aws
+            region: us-east-1
         configuration: 
+            ruby_version: 1.9.3
             use_asset_pipeline: true 
 
     mysql:
