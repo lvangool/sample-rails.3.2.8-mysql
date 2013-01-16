@@ -43,8 +43,7 @@ production:
             username: vagrant
             #ssh_key_name: blash
             #ssh_key_name: vagrant
-            extra_packages: 
-                - sysstat
+            extra_packages: [atop, chrony]
         configuration: 
             ruby_version: 1.9.3
             use_asset_pipeline: true 
