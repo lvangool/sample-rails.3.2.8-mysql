@@ -50,3 +50,9 @@ production:
         target: rails
         execute: true
         apply_during: all
+    after_mysql:
+      - source: /.cloud66/files/script.sh
+        destination: ~/script.sh
+        target: mysql
+        execute: true
+        apply_during: all
