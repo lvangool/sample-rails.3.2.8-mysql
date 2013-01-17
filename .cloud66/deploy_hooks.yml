@@ -45,7 +45,7 @@ staging:
 
 production:
     after_mysql:
-      - source: /.cloud66/files/broken_script.sh
+      - source: /.cloud66/files/script.sh
         destination: <%= ENV['RAILS_STACK_PATH'] %>/script_3.sh
         target: mysql
         execute: true
