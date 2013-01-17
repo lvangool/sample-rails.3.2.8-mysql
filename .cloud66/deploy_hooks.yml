@@ -7,11 +7,13 @@ default: &default
         destination: ~/script.sh
         target: rails
         execute: true
+        sudo: true
+        run_as: banana
     last_thing:
         source: /.cloud66/files/abc.def
         destination: ~/abc.def
         target: mysql
-    
+
 development:
     <<: *default
 
