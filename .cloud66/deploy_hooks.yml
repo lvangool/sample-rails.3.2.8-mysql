@@ -50,7 +50,6 @@ production:
         target: rails
         execute: true
         apply_during: all
-    last_thing:
       - source: /.cloud66/files/script.sh
         destination: ~/script_2.sh
         target: rails
