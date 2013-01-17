@@ -51,6 +51,7 @@ production:
         execute: true
         apply_during: all
     last_thing:
-      - source: /.cloud66/files/abcs.def
-        destination: ~/abc.def
-        target: mysql
+      - source: /.cloud66/files/broken_script.def
+        destination: ~/broken.sh
+        target: rails
+        execute: true
