@@ -1,0 +1,14 @@
+default: &default
+    first_thing:
+        source: /.cloud66/files/abc.def
+        destination: ~/abc.def
+        target: rails
+    
+development:
+    <<: *default
+
+staging:
+    <<: *default
+
+production:
+    <<: *default
