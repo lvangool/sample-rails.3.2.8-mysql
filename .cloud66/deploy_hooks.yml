@@ -3,6 +3,10 @@ default: &default
         source: /.cloud66/files/abc.def
         destination: ~/abc.def
         target: rails
+    last_thing:
+        source: /.cloud66/files/abc.def
+        destination: ~/abc.def
+        target: mysql
     
 development:
     <<: *default
