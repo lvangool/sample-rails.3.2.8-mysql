@@ -6,6 +6,7 @@ default: &default
             owner: jack:jack #default is server username:username
             execute: false #default is false
             parse: false #default is true
+            apply: build #default is all {deploy | always}
         
         -   source: /.cloud66/user_files/myscript.sh
             destination: <%= ENV['STACK_PATH'] %>/myscript.sh

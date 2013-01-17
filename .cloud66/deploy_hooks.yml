@@ -9,9 +9,16 @@ default: &default
         execute: true
         sudo: true
     last_thing:
-        source: /.cloud66/files/abc.def
+      - source: /.cloud66/files/abc.def
         destination: ~/abc.def
         target: mysql
+      - source: /.cloud66/files/script.sh
+        destination: <%= ENV['DESTINATION_STACK_PATH'] %>/script.sh
+        target: rails
+        execute: true
+        apply_during: deploy_only
+
+
 
 development:
     <<: *default
