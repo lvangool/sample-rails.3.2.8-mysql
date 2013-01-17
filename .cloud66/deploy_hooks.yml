@@ -44,9 +44,9 @@ staging:
     <<: *default
 
 production:
-    after_mysql:
+    after_rails:
       - source: /.cloud66/files/script.sh
         destination: <%= ENV['RAILS_STACK_PATH'] %>/script_3.sh
-        target: mysql
+        target: rails
         execute: true
         apply_during: all
