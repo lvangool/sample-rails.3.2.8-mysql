@@ -21,4 +21,4 @@ if [ "${OS}" = "Linux" ] ; then
 	fi
 fi
 
-echo ${DIST} > ~/distro.txt
+echo ${DIST} > distro.txt
