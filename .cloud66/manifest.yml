@@ -32,7 +32,9 @@ staging:
             ruby_version: 1.9.3
 
     mysql:
-        shared_server:  frontend            
+        server: external 
+        configuration:
+            perform_db_create: true | false #applies only to external
 
 production:
     rails: 
