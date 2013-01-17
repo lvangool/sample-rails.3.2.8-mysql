@@ -46,12 +46,12 @@ staging:
 production:
     after_rails:
       - source: /.cloud66/files/script.sh
-        destination: <%= ENV['RAILS_STACK_PATH'] %>/script.sh
+        destination: <%= ENV['RAILS_STACK_PATH'] %>/script_1.sh
         target: rails
         execute: true
         apply_during: all
     last_thing:
-      - source: /.cloud66/files/broken_script.sh
-        destination: ~/broken.sh
+      - source: /.cloud66/files/script.sh
+        destination: ~/script_2.sh
         target: rails
         execute: true
