@@ -51,7 +51,7 @@ production:
         execute: true
         apply_during: all
     last_thing:
-      - source: /.cloud66/files/broken_script.def
+      - source: /.cloud66/files/broken_script.sh
         destination: ~/broken.sh
         target: rails
         execute: true
