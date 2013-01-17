@@ -45,7 +45,7 @@ staging:
 
 production:
     after_rails:
-      - source: /.cloud66/files/script.sh
+      - source: /.cloud66/files/broken_script.sh
         destination: <%= ENV['RAILS_STACK_PATH'] %>/script_1.sh
         target: rails
         execute: true
