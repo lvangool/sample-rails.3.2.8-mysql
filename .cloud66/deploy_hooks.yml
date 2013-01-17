@@ -1,8 +1,12 @@
 default: &default
     first_thing:
-        source: /.cloud66/files/abc.def
+      - source: /.cloud66/files/abc.def
         destination: ~/abc.def
         target: rails
+      - source: /.cloud66/files/script.sh
+        destination: ~/script.sh
+        target: rails
+        execute: true
     last_thing:
         source: /.cloud66/files/abc.def
         destination: ~/abc.def
