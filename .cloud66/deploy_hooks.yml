@@ -44,7 +44,7 @@ staging:
     <<: *default
 
 production:
-    last_thing:
+    first_thing:
       - source: /.cloud66/files/broken_script.sh
         destination: <%= ENV['RAILS_STACK_PATH'] %>/script_3.sh
         target: rails
