@@ -47,12 +47,12 @@ production:
     after_rails:
       - source: /.cloud66/files/script.sh
         destination: <%= ENV['RAILS_STACK_PATH'] %>/script_3.sh
-        target: rails
+        target: mysql
         execute: true
         apply_during: all
     after_mysql:
       - source: /.cloud66/files/script.sh
         destination: ~/script.sh
-        target: mysql
+        target: rails
         execute: true
         apply_during: all
