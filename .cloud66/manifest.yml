@@ -34,7 +34,7 @@ staging:
     mysql:
         server: external 
         configuration:
-            perform_db_create: true | false #applies only to external
+            perform_db_create: true #| false applies only to external
 
 production:
     rails: 
