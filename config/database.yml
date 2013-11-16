@@ -14,8 +14,7 @@ development:
   reconnect: false
   database: mysql_development
   pool: 5
-  username: jack
-  password: jill
+  username: root
   host: localhost
   port: 3306
 
@@ -28,8 +27,7 @@ test:
   reconnect: false
   database: mysql_test
   pool: 5
-  username: jack
-  password: jill
+  username: root
   host: localhost
   port: 3306
 
@@ -39,8 +37,8 @@ staging:
   reconnect: false
   database: mysql_staging
   pool: 5
-  username: jack
-  password: jill
+  username: root
+  password: 
   host: localhost
   port: 3306
 
@@ -51,7 +49,7 @@ production:
   reconnect: false
   database: mysql_production
   pool: 5
-  username: jack
-  password: jill
+  username: root
+  password: 
   host: localhost
   port: 3306
