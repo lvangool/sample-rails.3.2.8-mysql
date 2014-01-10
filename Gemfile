@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+
+ruby '2.1.0'
 #ruby '1.9.3' --> trying to specify this in the manifest file now
 
 gem 'mysql2'
